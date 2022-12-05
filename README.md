@@ -16,3 +16,11 @@ Part 2 almost threw this idea out the window but worked in a similar fashion. Fi
 # Day 4
 
 Laziness wins, split the text into 4 columns, do some IF() AND() OR() magic and then sum the resultant columns. TEXTSPLIT() and NUMBERVALUE() are important to remember as excel will try to compare numbers stored as text.
+
+# Day 5
+
+Switch statements go BRRRRRR. Formatted input across some helper cells the pulled columns into single cells. Another helper function parses the instructions down to single numbers. A giant LET() formula then glues the whole mess together as you fill down to row 513. Grab the right character from each cell of the final array and smash together.
+
+Part 2 does the same thing but removes the ReverseText() lambda from the move part.
+
+The demo sheet has the table that assembles the SWITCH() cases programmatically since I kept getting tripped up making it. Some concat() and textjoin() magic there glues that all together.
