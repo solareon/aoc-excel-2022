@@ -24,3 +24,9 @@ Switch statements go BRRRRRR. Formatted input across some helper cells the pulle
 Part 2 does the same thing but removes the ReverseText() lambda from the move part.
 
 The demo sheet has the table that assembles the SWITCH() cases programmatically since I kept getting tripped up making it. Some concat() and textjoin() magic there glues that all together.
+
+# Day 6
+
+Surprisingly short solution to this one today. Both Part 1 and Part 2 used the same formula with two changes to the offset.
+
+First step was to walk the input and break it into 4 or 14 character chunks, then convert to ascii code values in an array and unique() the array, convert back to characters and see the length, if it’s 4 or 14 then it is a match and we search for the string in the input and add 3 or 13 since we found the starting position of the message. I could probably shorten the solution and combine to a single cell for both parts with a let but that’s a later task when I’m at a real computer not on the iPad.
