@@ -34,3 +34,7 @@ First step was to walk the input and break it into 4 or 14 character chunks, the
 # Day 7
 
 What an awful thing to reconstruct in Excel. First step is to use TEXTSPLIT() to pull out the data into two columns, one with the command or file size and the second with filename or directory name. Next step is to use some hideous formula to reconstruct the full paths respecting the .. to go up the tree. Next column is a simple extraction of the numbers and formatting to allow Excel to compute them. Next step is to pull the unique directory tree, sum at that level and then build a lookup table to find subdirectories under that directory. The lookup table is summed across a second row to find the real total size of a directory. Part 1 is solved by SUMIF() across this data set. Part 2 requires a little bit of trickery to find the target number. The input list is the same as part 1 but uses a combination of ABS() and MIN() to find a value that fits the critera.
+
+# Day 8
+
+More grids. Also Excel's sworn enemy of inputs is long numbers. First step is to construct a 99x99 array of the input. Then a function that looks left, right, up, and down to determine if it can see the edge otherwise returns 0. A COUNTIF() function walks this table and returns the total number of visible trees from all edges. Part 2 reuses the 99x99 table but looks at how far left, right, up, and down it can see before reaching a taller tree then stores each number to feed into PRODUCT(). A MAX() across the arrray returns the answer.
