@@ -38,3 +38,19 @@ What an awful thing to reconstruct in Excel. First step is to use TEXTSPLIT() to
 # Day 8
 
 More grids. Also Excel's sworn enemy of inputs is long numbers. First step is to construct a 99x99 array of the input. Then a function that looks left, right, up, and down to determine if it can see the edge otherwise returns 0. A COUNTIF() function walks this table and returns the total number of visible trees from all edges. Part 2 reuses the 99x99 table but looks at how far left, right, up, and down it can see before reaching a taller tree then stores each number to feed into PRODUCT(). A MAX() across the arrray returns the answer.
+
+# Day 9
+
+Part 1 Break down the input to a tape of steps i.e "R 4" becomes "R R R R". Walk through these steps and build the head's location. Then build a tail that checks if it's within 1 otherwise move in the correct direction. COUNTA(UNIQUE()) across the tail output and done.
+
+Part 2 Take the tail column and fill to the right 8 more times, COUNTA(UNIQUE()) and presto done.
+
+# Day 10
+
+Part 1
+
+Read through input with SCAN() and produce accumulator values. Read through a second time and put blanks next to noops. Stack the two columns into a single column and find the indexes as required then multiply with SEQUENCE() and SUM().
+
+Part 2
+
+Build a stacked array of 1-40 6 times to simulate each line of the CRT. Use INDEX() to pull the output of the accumulator data and compare against sequence from 1-240 if a match within 3 is found then print a #. Use the eyes to see the result and there ya go. I have an issue with my solution though as it seems to drop the first column and I can't quite figure out why =/
