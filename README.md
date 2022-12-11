@@ -54,3 +54,15 @@ Read through input with SCAN() and produce accumulator values. Read through a se
 Part 2
 
 Build a stacked array of 1-40 6 times to simulate each line of the CRT. Use INDEX() to pull the output of the accumulator data and compare against sequence from 1-240 if a match within 3 is found then print a #. Use the eyes to see the result and there ya go. I have an issue with my solution though as it seems to drop the first column and I can't quite figure out why =/
+
+# Day 11
+
+Excel
+
+Part 1 Built a parser to generate monkey "objects". Then built out the round calculations using LET() to generate the false and true tables for each monkey. Copy and paste 19 times down and then the answer comes out.
+
+Part 2
+
+Modulo... math is hard...lots of copy paste and waiting hoping excel doesn't completely explode. The file in the repo is the test data out to test 1000 just to prove viability of the solution. After all 10000 tests are complete the monkey business rows are filtered to a separate column and then parsed out, summed by column, sorted, and multiplied by the two highest values same as the first just way more waiting.
+
+My solution is 100% hard coded as I couldn't find a good way to move the monkey outputs to the other monkeys rather than just clicking cells.
