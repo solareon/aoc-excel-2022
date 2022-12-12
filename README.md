@@ -69,4 +69,4 @@ My solution is 100% hard coded as I couldn't find a good way to move the monkey 
 
 # Day 12
 
-Something something BFS, A*, Dijkstra's algorithm. Things that excel is not good at without VBA. It seems to be a recurring trend that day 12 stumps spreadsheets. I tried to path it out by hand but my count always ended up 2 over the solution that python solvers produce for my input.
+Something something BFS, A*, Dijkstra's algorithm. Things that excel is not good at without VBA. It seems to be a recurring trend that day 12 stumps spreadsheets. It appears the rules didn't apply for the move from any square to the final square. Finished with a manual solve by breaking it apart to columns and converting to ascii code then using conditional formatting to make it easier to see then just poked out the cells that were on the path and counted the blanks.
