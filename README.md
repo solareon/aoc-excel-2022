@@ -66,3 +66,7 @@ Part 2
 Modulo... math is hard...lots of copy paste and waiting hoping excel doesn't completely explode. The file in the repo is the test data out to test 1000 just to prove viability of the solution. After all 10000 tests are complete the monkey business rows are filtered to a separate column and then parsed out, summed by column, sorted, and multiplied by the two highest values same as the first just way more waiting.
 
 My solution is 100% hard coded as I couldn't find a good way to move the monkey outputs to the other monkeys rather than just clicking cells.
+
+# Day 12
+
+Something something BFS, A*, Dijkstra's algorithm. Things that excel is not good at without VBA. It seems to be a recurring trend that day 12 stumps spreadsheets. I tried to path it out by hand but my count always ended up 2 over the solution that python solvers produce for my input.
